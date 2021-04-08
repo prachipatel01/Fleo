@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar/>
+        {/* <Navbar/> */}
         <Switch>
           <Route path='/' exact component={Home}/>
           {/* <Route path='/About' exact component={About}/> */}
