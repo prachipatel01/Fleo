@@ -1,11 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
-import FetchSampleData from './Components/FetchSampleData';
-
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Home from './Components/Home';
+import Navbar from './Components/Navbar';
 function App() {
   return (
     <div className="App">
-      <FetchSampleData/>
+      <Router>
+        <Navbar/>
+        <Switch>
+          <Route path='/' exact component={Home}/>
+          {/* <Route path='/About' exact component={About}/> */}
+        </Switch>
+      </Router>
     </div>
   );
 }
